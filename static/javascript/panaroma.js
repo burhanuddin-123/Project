@@ -8,7 +8,7 @@ var savedLatitude;
 
 			// panoramas background
 			//var panoramasArray = ["{{url_for('static', filename='house.jpeg')}}"];
-			var panoramasArray = ["static/house.jpeg"];
+			var panoramasArray = ["static/javascript/house.jpeg"];
 
 			// setting up the renderer
 			renderer = new THREE.WebGLRenderer();
