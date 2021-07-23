@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/Dell/Downloads/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="file:///C:/Users/Dell/Downloads/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/mystyle.css')}}">
+</head>
+<body>
+	<div class="container">
+		<!-- <div class="img-box">
+			<iframe width="600px" height="350px" frameborder="0" src="https://momento360.com/e/u/c127d17bd25d40929a567867ff3c1db9?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"></iframe>
+		</div> -->
+		<div class="first">
+			<div class="inner-box" id="box">
+				<div class="front-form">
+                    <h2><u>LOGIN</u></h2>
+                    <form method="post" action="{{url_for('login')}}">
+                    	<input type="Username" class="input-box" placeholder="Your Username" name="email" required>
+                    	<input type="Password" class="input-box" placeholder="Password" name="password" required>
+                    	<button type="submit" class="sub-btn">Submit</button>
+                    	<input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <a href="{{url_for('register')}}"><button type="button" class="btn">I'm new here</button></a>
+                    <a href="">Forget password</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
